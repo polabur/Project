@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jollibee Theme</title>
+    <style>
+        /* Jollibee Theme CSS */
+
+        /* Base colors */
+        :root {
+            --jollibee-red: #ed1c24;
+            --jollibee-yellow: #ffcc00;
+            --jollibee-white: #ffffff;
+            --jollibee-grey: #f2f2f2;
+            --jollibee-dark-grey: #333333;
+        }
+
+        /* General styling */
+        body {
+            font-family: 'Arial, sans-serif';
+            background-color: var(--jollibee-grey);
+            color: var(--jollibee-dark-grey);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header and navigation styling */
+        header {
+            background-color: var(--jollibee-red);
+            color: var(--jollibee-white);
+            padding: 0.5rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--jollibee-white);
+            text-decoration: none;
+            margin-left: 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--jollibee-yellow);
+        }
+
+        /* Banner styling */
+        .banner {
+            width: 100%;
+            height: 300px;
+            background: url('https://www.jollibee.com.ph/wp-content/uploads/2020/05/banner.jpg') center/cover no-repeat;
+        }
+
+        /* Intro text area styling */
+        .intro {
+            padding: 2rem;
+            text-align: center;
+            background-color: var(--jollibee-white);
+            margin: 1rem auto;
+            border-radius: 10px;
+            max-width: 800px;
+        }
+
+        .intro p {
+            margin: 0;
+        }
+
+        /* Main content styling */
+        .main-content {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .main-content .box {
+            background-color: var(--jollibee-white);
+            border: 1px solid var(--jollibee-grey);
+            border-radius: 10px;
+            padding: 1rem;
+            width: 30%;
+            margin: 1rem 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .main-content .box img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: var(--jollibee-red);
+            color: var(--jollibee-white);
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer img {
+            height: 50px;
+        }
+
+        footer p {
+            margin: 0.5rem 0 0 0;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+            }
+
+            .main-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .main-content .box {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.jollibee.com.ph/wp-content/uploads/2019/10/jollibee-logo.png" alt="Jollibee Logo">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#delivery">Delivery</a>
+            <a href="#location">Location</a>
+            <a href="#menu">Menu</a>
+            <a href="#promotions">Promotions</a>
+        </nav>
+    </header>
+
+    <div class="banner"></div>
+
+    <div class="intro">
+        <h2>Welcome to Jollibee</h2>
+        <p>Jollibee is the largest fast food chain in the Philippines, operating a nationwide network of over 1,400 stores. A dominant market leader in the Philippines, Jollibee enjoys the lion's share of the local market that is more than all the other multinational brands combined.</p>
+    </div>
+
+    <div class="main-content">
+        <div class="box">
+            <img src="https://www.jollibee.com.ph/wp-content/uploads/2020/05/product-1.jpg" alt="Jollibee Product">
+        </div>
+        <div class="box">
+            <img src="https://www.jollibee.com.ph/wp-content/uploads/2020/05/product-2.jpg" alt="Jollibee Product">
+        </div>
+        <div class="box">
+            <img src="https://www.jollibee.com.ph/wp-content/uploads/2020/05/product-3.jpg" alt="Jollibee Product">
+        </div>
+    </div>
+
+    <footer>
+        <img src="https://www.jollibee.com.ph/wp-content/uploads/2019/10/jollibee-logo.png" alt="Jollibee Logo">
+        <p>Jollibee Foods Corporation, 10F Jollibee Plaza, Ortigas Center, Pasig City, Philippines</p>
+    </footer>
+</body>
+</html>
